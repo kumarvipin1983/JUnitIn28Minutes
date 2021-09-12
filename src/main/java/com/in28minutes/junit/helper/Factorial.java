@@ -1,0 +1,11 @@
+package com.in28minutes.junit.helper;
+
+public class Factorial {
+	
+	public long factorial(long number) {
+		if(number == 0) {
+			return 1; 
+		}
+		return number * factorial(number - 1);
+	}
+}

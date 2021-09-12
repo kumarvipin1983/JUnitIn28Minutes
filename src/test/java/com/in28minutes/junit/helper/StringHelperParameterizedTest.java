@@ -11,19 +11,20 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-@RunWith(Parameterized.class)
+@RunWith(Parameterized.class) //1
 public class StringHelperParameterizedTest {
 	
 	StringHelper helper; 
 	
-	private String input;
+	private String input;    //2
 	private String expectedOutput; 
 	
-	public StringHelperParameterizedTest(String input, String expectedOutput) {
+	public StringHelperParameterizedTest(String input, String expectedOutput) { //3
 		this.input = input;
 		this.expectedOutput = expectedOutput;
 	}
-	@Parameters
+	
+	@Parameters													//4
 	public static Collection<String[]> testConsiditions() {
 		String expectedOutputs[][] = {
 				{"AACD", "CD"},
