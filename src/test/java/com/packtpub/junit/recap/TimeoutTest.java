@@ -1,13 +1,12 @@
 package com.packtpub.junit.recap;
 
-import static org.junit.Assert.*;
-
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.Timeout;
 
 public class TimeoutTest {
 
+	@SuppressWarnings("deprecation")
 	@Rule
 	public Timeout globalTimeout = new Timeout(20); 
 	

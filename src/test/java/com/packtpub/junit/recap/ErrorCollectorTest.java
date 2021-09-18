@@ -1,7 +1,6 @@
 package com.packtpub.junit.recap;
 
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.*;
 
 import org.junit.Rule;
 import org.junit.Test;

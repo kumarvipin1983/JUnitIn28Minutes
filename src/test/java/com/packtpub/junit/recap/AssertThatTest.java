@@ -12,13 +12,11 @@ import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.CoreMatchers.startsWith;
-import static org.junit.Assert.*;
-import com.packtpub.junit.recap.LessThanOrEqual;
+import static org.junit.Assert.assertThat;
 
 import java.util.Arrays;
 import java.util.List;
 
-import org.hamcrest.Matcher;
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -63,6 +61,7 @@ public class AssertThatTest {
 		assertThat(name, containsString("Jr"));	
 	}
 
+	@SuppressWarnings("deprecation")
 	@Test
 	@Ignore
 	public void testLessThanOrEqualCustomMatcher() throws Exception {
